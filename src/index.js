@@ -23,24 +23,13 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//   <React.StrictMode>
-//     <ChakraProvider>
-//       <BrowserRouter>
-//         <App />
-//       </BrowserRouter>
-//     </ChakraProvider>
-//   </React.StrictMode>
-// );
-
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
     <ChakraProvider>
       <BrowserRouter>
         <App />
       </BrowserRouter>
     </ChakraProvider>
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
