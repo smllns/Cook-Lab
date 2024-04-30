@@ -20,7 +20,7 @@
     "react-scripts": "5.0.1",
     "swiper": "^11.0.7",
     "web-vitals": "^2.1.4",
-    "homepage": "https://username.github.io/CookLab"
+    "homepage": "https://smllns.github.io/CookLab"
   },
   "scripts": {
     "start": "react-scripts start",
