@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-// import { apiKeyThree, apiKeyFour } from '../info/SecretData';
+import { apiKeyThree, apiKeyFour } from '../info/SecretData';
 import {
   Box,
   Flex,
@@ -28,8 +28,6 @@ import NutritionInformation from './NutritionInformation';
 // RECIPE PAGE COMPONENT WITH DETAILED RECIPE INFORMATION
 
 const RecipePage = () => {
-  const apiKeyThree = process.env.API_KEY_THREE;
-  const apiKeyFour = process.env.API_KEY_FOUR;
   const toast = useToast();
 
   // GETTING RECIPE ID FROM CURRENT PAGE URL

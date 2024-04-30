@@ -1,6 +1,6 @@
 import { useBreakpointValue } from '@chakra-ui/react';
 import React from 'react';
-// import { apiKeyOne } from '../info/SecretData';
+import { apiKeyOne } from '../info/SecretData';
 import useRecipes from '../hooks/useRecipes';
 import CustomGrid from './CustomGrid';
 import ComponentContainer from './ComponentContainer';
@@ -8,7 +8,6 @@ import ComponentContainer from './ComponentContainer';
 // CATEGORY GRID COMPONENT
 
 const CategoryRecipesGrid = ({ category }) => {
-  const apiKeyOne = process.env.API_KEY_ONE;
   const recipeCardCount = useBreakpointValue({ base: 4, md: 6, lg: 9 });
 
   // API LINK SETTINGS

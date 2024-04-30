@@ -3,13 +3,12 @@ import React from 'react';
 import ComponentHeader from './ComponentHeader';
 import { recipesPopularText } from '../info/TextInfo';
 
-// import { apiKeyEight } from '../info/SecretData';
+import { apiKeyEight } from '../info/SecretData';
 import useRecipes from '../hooks/useRecipes';
 import CustomGrid from './CustomGrid';
 import ComponentContainer from './ComponentContainer';
 
 const RecipesPopularGrid = () => {
-  const apiKeyEight = process.env.API_KEY_EIGHT;
   const recipeCardCount = useBreakpointValue({ base: 4, md: 6, lg: 8 });
 
   // COMPLETING API REQUEST ABOUT RECIPE INFORMATION
