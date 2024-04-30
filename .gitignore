@@ -27,5 +27,7 @@ yarn-error.log*
 
 # api keys
 SecretData.js
-secrets.env 
 
+
+.vercel
+.env*.local

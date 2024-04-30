@@ -2,13 +2,13 @@ import React from 'react';
 import ComponentHeader from './ComponentHeader';
 import { Container, useBreakpointValue } from '@chakra-ui/react';
 import { recipeText } from '../info/TextInfo';
-// import { apiKeySix } from '../info/SecretData';
+import { apiKeySix } from '../info/SecretData';
 import useRecipes from '../hooks/useRecipes';
 import CustomGrid from './CustomGrid';
 import ComponentContainer from './ComponentContainer';
 
 const RecipesGrid = () => {
-  const apiKeySix = process.env.API_KEY_SIX;
+  // const apiKeySix = process.env.API_KEY_SIX;
   const recipeCardCount = useBreakpointValue({ base: 4, md: 6, lg: 9 });
 
   // COMPLETING API REQUEST ABOUT RECIPE INFORMATION
