@@ -3,12 +3,13 @@ import React from 'react';
 import ComponentHeader from './ComponentHeader';
 import { recipesSmallText } from '../info/TextInfo';
 
-import { apiKeySeven } from '../info/SecretData';
+// import { apiKeySeven } from '../info/SecretData';
 import useRecipes from '../hooks/useRecipes';
 import CustomGrid from './CustomGrid';
 import ComponentContainer from './ComponentContainer';
 
 const RecipesGridSmall = () => {
+  const apiKeySeven = process.env.API_KEY_SEVEN;
   const recipeCardCount = 4;
 
   // COMPLETING API REQUEST ABOUT RECIPE INFORMATION
