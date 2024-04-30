@@ -5,7 +5,7 @@ import { favoritesText } from '../info/TextInfo';
 import useLoggedIn from '../hooks/useLoggedIn';
 import useFavoriteRecipesIds from '../hooks/useFavoriteRecipesIds';
 import RecipeCard from './RecipeCard';
-import { apiKeyTwo } from '../info/SecretData';
+// import { apiKeyTwo } from '../info/SecretData';
 import useRecipesByIds from '../hooks/useRecipesByIds';
 import ButtonCustom from './ButtonCustom';
 import CustomGridSkeleton from './CustomGridSkeleton';
@@ -14,7 +14,7 @@ import ComponentContainer from './ComponentContainer';
 // FAVORITE RECIPES GRID COMPONENT
 
 const FavoritesRecipes = () => {
-  // const apiKeyTwo = process.env.API_KEY_TWO;
+  const apiKeyTwo = process.env.API_KEY_TWO;
   const recipeCardCount = useBreakpointValue({ base: 4, md: 6, lg: 6 }); // Determine number of RecipeCard components to render based on screen size
   const isLoggedIn = useLoggedIn();
   const { favoriteRecipeIds, loadingNum } = useFavoriteRecipesIds();

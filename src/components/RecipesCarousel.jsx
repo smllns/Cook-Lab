@@ -2,14 +2,14 @@ import React from 'react';
 import Slide from './Slide';
 import { Box } from '@chakra-ui/react';
 import Carousel from './Carousel';
-import { apiKeyFive } from '../info/SecretData';
+// import { apiKeyFive } from '../info/SecretData';
 import useRecipes from '../hooks/useRecipes';
 import RecipeSkeleton from './RecipeSkeleton';
 
 // SLIDER COMPONENT WITH DIFFERENT RECIPES
 
 const RecipesCarousel = () => {
-  // const apiKeyFive = process.env.API_KEY_FIVE;
+  const apiKeyFive = process.env.API_KEY_FIVE;
   const { recipes, loading, error } = useRecipes(apiKeyFive, 8);
 
   // COMPLETING API REQUEST ABOUT RECIPE INFORMATION
