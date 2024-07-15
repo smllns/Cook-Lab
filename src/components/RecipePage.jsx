@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { apiKeyThree, apiKeyFour } from '../info/SecretData';
+// import { apiKeyThree, apiKeyFour } from '../info/SecretData';
 import {
   Box,
   Flex,
@@ -37,10 +37,13 @@ const RecipePage = () => {
   const { isFavorite, handleToggleFavorites } = useFavorite(recipeId);
 
   // COMPLETING API REQUESTS ABOUT RECIPE INFORMATION
-  const { recipe, loading, error } = useRecipeDetails(recipeId, apiKeyThree);
+  const { recipe, loading, error } = useRecipeDetails(
+    recipeId,
+    process.env.PUBLIC_API_KEY3
+  );
   const { nutrition, loadingN, errorN } = useNutritionDetails(
     recipeId,
-    apiKeyFour
+    process.env.PUBLIC_API_KEY4
   );
 
   const [isFixed, isMdScreen] = useScrollHandler('recipe-flex');
@@ -343,11 +346,11 @@ const RecipePage = () => {
         {/* TASTE INFORMATION  */}
 
         <Box flex='20%' height='max-content'>
-          <TasteInformation
+          {/* <TasteInformation
             recipe={recipe}
             isMdScreen={isMdScreen}
             isFixed={isFixed}
-          />
+          /> */}
         </Box>
       </Flex>
 

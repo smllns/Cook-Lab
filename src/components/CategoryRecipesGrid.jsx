@@ -1,6 +1,6 @@
 import { useBreakpointValue } from '@chakra-ui/react';
 import React from 'react';
-import { apiKeyOne } from '../info/SecretData';
+// import { apiKeyOne } from '../info/SecretData';
 import useRecipes from '../hooks/useRecipes';
 import CustomGrid from './CustomGrid';
 import ComponentContainer from './ComponentContainer';
@@ -41,7 +41,7 @@ const CategoryRecipesGrid = ({ category }) => {
   };
 
   const { recipes, loading, error } = useRecipes(
-    apiKeyOne,
+    process.env.PUBLIC_API_KEY1,
     9,
     getCategoryQuery(category)
   );

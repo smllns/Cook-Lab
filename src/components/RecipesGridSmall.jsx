@@ -3,7 +3,7 @@ import React from 'react';
 import ComponentHeader from './ComponentHeader';
 import { recipesSmallText } from '../info/TextInfo';
 
-import { apiKeySeven } from '../info/SecretData';
+// import { apiKeySeven } from '../info/SecretData';
 import useRecipes from '../hooks/useRecipes';
 import CustomGrid from './CustomGrid';
 import ComponentContainer from './ComponentContainer';
@@ -12,7 +12,10 @@ const RecipesGridSmall = () => {
   const recipeCardCount = 4;
 
   // COMPLETING API REQUEST ABOUT RECIPE INFORMATION
-  const { recipes, loading, error } = useRecipes(apiKeySeven, 8);
+  const { recipes, loading, error } = useRecipes(
+    process.env.PUBLIC_API_KEY7,
+    8
+  );
 
   return (
     <ComponentContainer pt='0px' pb='0px'>

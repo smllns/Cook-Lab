@@ -5,7 +5,7 @@ import { favoritesText } from '../info/TextInfo';
 import useLoggedIn from '../hooks/useLoggedIn';
 import useFavoriteRecipesIds from '../hooks/useFavoriteRecipesIds';
 import RecipeCard from './RecipeCard';
-import { apiKeyTwo } from '../info/SecretData';
+// import { apiKeyTwo } from '../info/SecretData';
 import useRecipesByIds from '../hooks/useRecipesByIds';
 import ButtonCustom from './ButtonCustom';
 import CustomGridSkeleton from './CustomGridSkeleton';
@@ -19,7 +19,7 @@ const FavoritesRecipes = () => {
   const { favoriteRecipeIds, loadingNum } = useFavoriteRecipesIds();
   const { recipes, loading, error } = useRecipesByIds(
     favoriteRecipeIds,
-    apiKeyTwo
+    process.env.PUBLIC_API_KEY2
   );
   const [showAllRecipes, setShowAllRecipes] = useState(false);
   const visibleRecipes = useMemo(

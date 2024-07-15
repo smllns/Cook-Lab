@@ -3,7 +3,7 @@ import React from 'react';
 import ComponentHeader from './ComponentHeader';
 import { recipesPopularText } from '../info/TextInfo';
 
-import { apiKeyEight } from '../info/SecretData';
+// import { apiKeyEight } from '../info/SecretData';
 import useRecipes from '../hooks/useRecipes';
 import CustomGrid from './CustomGrid';
 import ComponentContainer from './ComponentContainer';
@@ -13,7 +13,7 @@ const RecipesPopularGrid = () => {
 
   // COMPLETING API REQUEST ABOUT RECIPE INFORMATION
   const { recipes, loading, error } = useRecipes(
-    apiKeyEight,
+    process.env.PUBLIC_API_KEY8,
     9,
     '&sort=popularity'
   );
