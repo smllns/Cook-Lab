@@ -6,10 +6,8 @@ import { ChakraProvider } from '@chakra-ui/react';
 import { BrowserRouter } from 'react-router-dom';
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
-// import { firebaseConfig } from './info/SecretData';
 
 // ENTRY POINT OF THE APP: IMPORTS LIBRARIES AND INITIALIZES THE DATABASE
-console.log('Firebase API Key:', process.env.REACT_APP_FIREBASE_API_KEY);
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,

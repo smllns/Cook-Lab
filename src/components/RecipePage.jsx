@@ -1,6 +1,5 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-// import { apiKeyThree, apiKeyFour } from '../info/SecretData';
 import {
   Box,
   Flex,

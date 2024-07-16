@@ -2,7 +2,6 @@ import React from 'react';
 import Slide from './Slide';
 import { Box } from '@chakra-ui/react';
 import Carousel from './Carousel';
-// import { apiKeyFive } from '../info/SecretData';
 import useRecipes from '../hooks/useRecipes';
 import RecipeSkeleton from './RecipeSkeleton';
 

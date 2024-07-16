@@ -3,7 +3,6 @@ import React from 'react';
 import ComponentHeader from './ComponentHeader';
 import { recipesSmallText } from '../info/TextInfo';
 
-// import { apiKeySeven } from '../info/SecretData';
 import useRecipes from '../hooks/useRecipes';
 import CustomGrid from './CustomGrid';
 import ComponentContainer from './ComponentContainer';

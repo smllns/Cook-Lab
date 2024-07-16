@@ -2,7 +2,6 @@ import React from 'react';
 import ComponentHeader from './ComponentHeader';
 import { Container, useBreakpointValue } from '@chakra-ui/react';
 import { recipeText } from '../info/TextInfo';
-// import { apiKeySix } from '../info/SecretData';
 import useRecipes from '../hooks/useRecipes';
 import CustomGrid from './CustomGrid';
 import ComponentContainer from './ComponentContainer';

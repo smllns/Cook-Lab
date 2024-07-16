@@ -1,6 +1,5 @@
 import { useBreakpointValue } from '@chakra-ui/react';
 import React from 'react';
-// import { apiKeyOne } from '../info/SecretData';
 import useRecipes from '../hooks/useRecipes';
 import CustomGrid from './CustomGrid';
 import ComponentContainer from './ComponentContainer';
