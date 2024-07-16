@@ -13,7 +13,7 @@ const RecipesPopularGrid = () => {
 
   // COMPLETING API REQUEST ABOUT RECIPE INFORMATION
   const { recipes, loading, error } = useRecipes(
-    process.env.PUBLIC_API_KEY8,
+    process.env.REACT_APP_API_KEY8,
     9,
     '&sort=popularity'
   );

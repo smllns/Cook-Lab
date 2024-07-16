@@ -12,7 +12,7 @@ const RecipesGrid = () => {
 
   // COMPLETING API REQUEST ABOUT RECIPE INFORMATION
   const { recipes, loading, error } = useRecipes(
-    process.env.PUBLIC_API_KEY6,
+    process.env.REACT_APP_API_KEY6,
     9
   );
 

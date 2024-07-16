@@ -39,11 +39,11 @@ const RecipePage = () => {
   // COMPLETING API REQUESTS ABOUT RECIPE INFORMATION
   const { recipe, loading, error } = useRecipeDetails(
     recipeId,
-    process.env.PUBLIC_API_KEY3
+    process.env.REACT_APP_API_KEY3
   );
   const { nutrition, loadingN, errorN } = useNutritionDetails(
     recipeId,
-    process.env.PUBLIC_API_KEY4
+    process.env.REACT_APP_API_KEY4
   );
 
   const [isFixed, isMdScreen] = useScrollHandler('recipe-flex');

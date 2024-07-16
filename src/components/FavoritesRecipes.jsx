@@ -19,7 +19,7 @@ const FavoritesRecipes = () => {
   const { favoriteRecipeIds, loadingNum } = useFavoriteRecipesIds();
   const { recipes, loading, error } = useRecipesByIds(
     favoriteRecipeIds,
-    process.env.PUBLIC_API_KEY2
+    process.env.REACT_APP_API_KEY2
   );
   const [showAllRecipes, setShowAllRecipes] = useState(false);
   const visibleRecipes = useMemo(

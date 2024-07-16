@@ -41,7 +41,7 @@ const CategoryRecipesGrid = ({ category }) => {
   };
 
   const { recipes, loading, error } = useRecipes(
-    process.env.PUBLIC_API_KEY1,
+    process.env.REACT_APP_API_KEY1,
     9,
     getCategoryQuery(category)
   );

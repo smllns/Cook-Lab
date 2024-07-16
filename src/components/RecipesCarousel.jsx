@@ -10,7 +10,7 @@ import RecipeSkeleton from './RecipeSkeleton';
 
 const RecipesCarousel = () => {
   const { recipes, loading, error } = useRecipes(
-    process.env.PUBLIC_API_KEY5,
+    process.env.REACT_APP_API_KEY5,
     8
   );
 
